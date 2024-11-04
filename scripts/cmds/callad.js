@@ -40,9 +40,9 @@ module.exports = {
 			content: "\n\nContent:\n─────────────────\n%1\n─────────────────\nReply this message to send message to user",
 			success: "Sent your message to %1 admin successfully!\n%2",
 			failed: "An error occurred while sending your message to %1 admin\n%2\nCheck console for more details",
-			reply: "📍 Reply from admin %1:\n─────────────────\n%2\n─────────────────\nReply this message to continue send message to admin",
+			reply: "📣| 𝐑𝐞𝐩𝐨𝐧𝐬𝐞 𝐝𝐞 𝐥'𝐚𝐝𝐦𝐢𝐧\n🎶『%1』🎶:\n╔╦══• •✠•☘️•✠ • •══╦╗\n%2\n╚╩══• •✠•☘️•✠ • •══╩╝\nRིeིpིoིnིdིsི aི cིeི mིeིsིsིaིgིeི pིoིuིrི cིoིnིtིiིnིuིeིrི lིaི dིiིsིcིuིsིsིiིoིnི aིvིeིcི mིoིnི aིdིmིiིnིqི",
 			replySuccess: "Sent your reply to admin successfully!",
-			feedback: "📝 Feedback from user %1:\n- User ID: %2%3\n\nContent:\n─────────────────\n%4\n─────────────────\nReply this message to send message to user",
+			feedback: "📣| 𝐕𝐨𝐮𝐬 𝐚𝐯𝐞𝐳 𝐮𝐧 𝐧𝐨𝐮𝐯𝐞𝐚𝐮 𝐦𝐞𝐬𝐬𝐚𝐠𝐞 𝐬𝐞 𝐥'𝐮𝐭𝐢𝐥𝐢𝐬𝐚𝐭𝐞𝐮𝐫\n🎶『%1』🎶\n- User ID: %2%3\n\nContent:\n╔╦══• •✠•☘️•✠ • •══╦╗\n%4\n╚╩══• •✠•☘️•✠ • •══╩╝\nRིeིpིoིnིdིsི aི cིeི mིeིsིsིaིgིeི pིoིuིrི cིoིnིtིiིnིuིeིrི lིaི dིiིsིcིuིsིsིiིoིnི aིvིeིcི lི'uིtིiིlིiིsིaིtིeིuིrི",
 			replyUserSuccess: "Sent your reply to user successfully!",
 			noAdmin: "Bot has no admin at the moment"
 		}
@@ -56,9 +56,9 @@ module.exports = {
 		if (config.adminBot.length == 0)
 			return message.reply(getLang("noAdmin"));
 		const senderName = await usersData.getName(senderID);
-		const msg = "==📨️ CALL ADMIN 📨️=="
-			+ `\n- User Name: ${senderName}`
-			+ `\n- User ID: ${senderID}`
+		const msg = "==👻ℂ𝔸𝕃𝕃📫𝕊ℍ𝕀𝕊𝕌𝕀👻=="
+			+ `\n- User Name: 💧${senderName}💧`
+			+ `\n- User ID: 🔱${senderID}🔱`
 			+ (isGroup ? getLang("sendByGroup", (await threadsData.get(threadID)).threadName, threadID) : getLang("sendByUser"));
 
 		const formMessage = {
